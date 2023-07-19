@@ -1,11 +1,32 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
 body {
-    /* font-family: 'Press Start 2P', sans-serif; */
     background-color: #e4e7ec;
 }
 
 h1 {
     text-align: center;
     position: relative;
+    /* overflow-x: hidden; */
+}
+
+.offer {
+    position: absolute;
+    top: -10px;
+    transform: rotate(25deg);
+    background-color: yellow;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 30px;
+    font-size: 18px;
+    border-radius: 50%;
+    overflow: hidden;
+    user-select: none;
 }
 
 #wrapper {
@@ -137,27 +158,7 @@ label {
     100% {transform: translate(0px, 2px) rotate(0deg);} 
 }
 
-.offer {
-    position: absolute;
-    /* right: 0; */
-    /* left: 59%; */
-    top: -10px;
-    /* right: 0; */
-    transform: rotate(25deg);
-    background-color: yellow;
-    /* height: 200px;
-    width: 200px; */
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    padding: 30px;
-    /* line-height: 200px; */
-    /* white-space: nowrap; */
-    font-size: 18px;
-    border-radius: 50%;
-    /* width: 10%; */
-    overflow-x: auto;
-}
+
 
 .chk {
     margin: 0 auto;
