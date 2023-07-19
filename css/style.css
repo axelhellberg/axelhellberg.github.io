@@ -141,7 +141,7 @@ label {
     position: absolute;
     /* right: 0; */
     /* left: 59%; */
-    top: 10px;
+    top: -10px;
     /* right: 0; */
     transform: rotate(25deg);
     background-color: yellow;
@@ -153,9 +153,10 @@ label {
     padding: 30px;
     /* line-height: 200px; */
     /* white-space: nowrap; */
-    font-size: 21px;
+    font-size: 18px;
     border-radius: 50%;
     /* width: 10%; */
+    overflow-x: auto;
 }
 
 .chk {
