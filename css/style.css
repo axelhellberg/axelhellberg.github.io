@@ -3,7 +3,10 @@ body {
     background-color: #e4e7ec;
 }
 
-h1 {text-align: center;}
+h1 {
+    text-align: center;
+    position: relative;
+}
 
 #wrapper {
     display: flex;
@@ -135,21 +138,42 @@ label {
 }
 
 .offer {
-    display: none;
     position: absolute;
-    right: -50px;
+    /* right: 0; */
+    /* left: 59%; */
     top: 10px;
-    transform: rotate(30deg);
+    /* right: 0; */
+    transform: rotate(25deg);
     background-color: yellow;
     /* height: 200px;
     width: 200px; */
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    padding: 50px;
+    padding: 30px;
     /* line-height: 200px; */
     /* white-space: nowrap; */
     font-size: 21px;
     border-radius: 50%;
     /* width: 10%; */
+}
+
+.chk {
+    margin: 0 auto;
+    line-height: 16px;
+}
+
+.chk label {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+#is-human {
+    width: 52px;
+    margin: 0;
+}
+
+
+footer {
+    text-align: center;
 }

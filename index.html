@@ -9,8 +9,7 @@
 </head>
 <body>
     <div id="wrapper">
-        <span class="offer">limited time only!</span>
-        <h1>Girlfriend Generator</h1>
+        <h1 z-index="0">Girlfriend Generator<span class="offer" z-index="-1">limited time offer!</span></h1>
         <div class="t-wrapper">
             <label>Smokin' hot</label>
             <div class="toggle" id="toggle-1" tabindex="0">
@@ -32,6 +31,10 @@
                 <span></span>
             </div>
         </div>
+        <div class="t-wrapper chk">
+            <label><b>New feature!</b> is she human?</label>
+            <input type="checkbox" checked="true" id="is-human">
+        </div>
         <form id="card-info">
             <label>Card Number</label>
             <input type="text" placeholder="XXXX XXXX XXXX XXXX">
@@ -44,5 +47,8 @@
             </button>
         </div>
     </div>
+    <footer>
+        © 2023 cant get it all fellas
+    </footer>
 </body>
 </html>
