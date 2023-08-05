@@ -14,6 +14,11 @@ h1 {
     /* overflow-x: hidden; */
 }
 
+i {
+    text-align: center;
+    margin-top: 14px;
+}
+
 /* h1:after {
     content: 'build-a-bitch.com';
     position: absolute;
@@ -188,3 +193,45 @@ label {
 footer {
     text-align: center;
 }
+
+
+.warning-label-bg {
+    display: flex;
+    max-width: 100%;
+    background-color: black;
+    /* display: block; */
+    padding: 1vw;
+}
+
+.warning-label-content {
+    /* display: inline-block; */
+    /* justify-content: center; */
+    text-align: center;
+    font-weight: bold;
+    font-size: 4vw;
+    width: 100%;
+    background-color: white;
+    /* margin: auto; */
+    padding: 2vw;
+    user-select: none;
+
+}
+
+.reg-tm {
+    /* display: inline-block; */
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 2vw;
+    /* height: 1px; */
+}
+
+.marquee {
+    display: block; /* Important to give the content a width */
+    width: 100%;
+    animation: move 15s linear infinite;
+    transform: translateX(-100%);
+}
+
+@keyframes move {
+    to { transform: translateX(100%); }
+  }
