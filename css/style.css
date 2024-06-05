@@ -54,6 +54,12 @@ i {
     height: 5vw;
 }
 
+.censored {
+    font-family: sans-serif;
+}
+
+
+
 #wrapper {
     display: flex;
     flex-direction: column;
@@ -183,7 +189,30 @@ label {
     100% {transform: translate(0px, 2px) rotate(0deg);}
 }
 
+#qr-wrapper {
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+}
 
+#qr {
+    background-image: url("/img/qrcode.png");
+    /* height: 100px;
+    width: 100px; */
+    background-position: center; /* Center the image */
+    /* background-repeat: no-repeat; Do not repeat the image */
+    background-size: cover;
+    padding: 100px;
+    border-radius: 10px;
+    background-color: #fff;
+    /* margin: 100px; */
+    animation: spin 5s infinite steps(4);
+}
+
+.subheading {
+    font-weight: bold;
+    margin: 0 auto;
+}
 
 .chk {
     margin: 0 auto;
@@ -203,6 +232,7 @@ label {
 
 footer {
     text-align: center;
+    margin: 10px 0;
 }
 
 
@@ -240,6 +270,15 @@ footer {
     width: 100%;
     animation: move 10s linear infinite;
     /* transform: translateX(25%); */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes move {
