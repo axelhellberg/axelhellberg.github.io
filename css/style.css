@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    background-color: #e4e7ec;
+    background-color: darkcyan; 
 }
 
 h1 {
@@ -37,8 +37,8 @@ i {
     display: flex;
     flex-direction: column;
     border: outset 2px;
-    /* width: 400px; */
-    /* height: 300px; */
+    box-shadow: 0px 0px 10px 1px black;
+    background-color: #e4e7ec; 
 }
 
 .banner {
@@ -83,7 +83,6 @@ i {
 
 .banner-btn:active {
     border-style: inset; 
-    /* box-shadow: 0 0 0 0; */
 }
 
 .window-content {
@@ -93,6 +92,7 @@ i {
     align-items: center;
     height: 100%;
     margin: 0 32px;
+    z-index: 1;
 }
 
 .offer {
@@ -102,7 +102,6 @@ i {
     align-items: center;
     left: -7vw;
     top: -3vw;
-    
     transform: rotate(-25deg);
     background-color: yellow;
     text-transform: uppercase;
@@ -130,7 +129,7 @@ i {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-
+    
 }
 
 .t-wrapper {
@@ -205,14 +204,37 @@ label {
     margin-bottom: 16px;
 }
 
-/* #scam {
+.window-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 12px;
+    font-weight: bold;
+}
 
-} */
+.window-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e7ec;
+    color: black;
+    border: outset 1.5px;
+    border-radius: 2px;
+    width: 100px;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.window-btn:active {
+    border-style: inset; 
+    /* box-shadow: 0 0 0 0; */
+}
 
 #scam {
     height: 64px;
     width: 128px;
     margin: 16px auto;
+    margin-bottom: 0;
     font-size: 18px;
     /* padding: 12px; */
     border: 0;
