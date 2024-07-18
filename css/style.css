@@ -11,7 +11,7 @@ body {
 h1 {
     display: flex;
     justify-content: center;
-    margin: 32px auto;
+    /* margin: 32px auto; */
     /* text-align: center; */
     position: relative;
     /* max-width: 100%; */
@@ -32,15 +32,78 @@ i {
     color: #000;
 } */
 
+.window {
+    margin: 12px auto;
+    display: flex;
+    flex-direction: column;
+    border: outset 2px;
+    /* width: 400px; */
+    /* height: 300px; */
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    background: darkblue;
+    background: linear-gradient(90deg, darkblue 0%, darkmagenta 100%);
+
+    color: white;
+    font-weight: bold;
+    user-select: none;
+}
+
+.banner-title {
+    margin: 0 auto 0 8px;
+    font-size: 21px;
+    font-style: italic;
+    position: relative;
+}
+
+.banner-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    color: black;
+    border: outset 1px;
+    border-radius: 1px;
+    height: 21px;
+    width: 21px;
+    line-height: 21px;
+    margin: 2px 0px 2px 2px;
+    cursor: pointer;
+
+}
+
+.banner-btn:last-child {
+    margin-right: 2px;
+}
+
+.banner-btn:active {
+    border-style: inset; 
+    /* box-shadow: 0 0 0 0; */
+}
+
+.window-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    margin: 0 32px;
+}
+
 .offer {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 100%;
-    top: -1vw;
-    /* right: -5vw; */
-    transform: rotate(25deg);
+    left: -7vw;
+    top: -3vw;
+    
+    transform: rotate(-25deg);
     background-color: yellow;
     text-transform: uppercase;
     text-align: center;
@@ -52,7 +115,10 @@ i {
     user-select: none;
     width: 5vw;
     height: 5vw;
+    color: black;
+    font-style: normal;
 }
+
 
 .censored {
     font-family: sans-serif;
@@ -215,7 +281,7 @@ label {
 }
 
 .chk {
-    margin: 0 auto;
+    /* margin: 64px auto; */
     line-height: 16px;
 }
 
@@ -335,7 +401,8 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        left: 99%;
+        left: 100%;
+        top: -8vw;
         /* top: -10px; */
         /* top: -10px; */
         /* right: -5vw; */
