@@ -74,7 +74,7 @@ i {
     line-height: 21px;
     margin: 2px 0px 2px 2px;
     cursor: pointer;
-
+    position: relative;
 }
 
 .banner-btn:last-child {
@@ -83,6 +83,21 @@ i {
 
 .banner-btn:active {
     border-style: inset; 
+}
+
+.banner-btn span {
+    position: absolute;
+    height: 2px;
+    width: 15px;
+    background-color: black;
+}
+
+.banner-btn span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.banner-btn span:nth-child(2) {
+    transform: rotate(-45deg);
 }
 
 .window-content {
@@ -278,7 +293,7 @@ label {
 }
 
 #qr-wrapper {
-    margin: 25px auto;
+    margin: 32px auto;
     display: flex;
     flex-direction: column;
 }
